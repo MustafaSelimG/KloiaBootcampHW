@@ -1,44 +1,40 @@
 # KloiaBootcampBDD
 >*includes* Selenium , Cucumber , JUnit , BDD , POM , Test Automation
-  ## Kata_1
-   **Scenario: logo verification**</br>
-     - *Given* homepage is open</br>
-     - *And* I close the pop up</br>
-     - *Then* logo should be displayed</br>
+
+  **Background**
+     - *Given* homepage is open
+     - *And* I close the pop up
+
+  ## @task1
+   **Scenario: verify search results**</br>
+     - *And* I verify the page title</br>
+     - *When* I search for "drone"</br>
+     - *Then* search result "drone" should be seen</br>
    
-   ![kat1](https://user-images.githubusercontent.com/88919177/145562389-0ed2dc13-4fe1-4d49-8053-152ae92370eb.gif)
+![task1](https://user-images.githubusercontent.com/88919177/146367624-04c34204-a6f6-482b-8768-b4bb84c63f0c.gif)
 
 
-  ## Kata_2
-   **Scenario: search result test**</br>
-     - *Given* homepage is open</br>
-     - *And* I close the pop up</br>
-     - *When* I search for "shoes"</br>
-     - *Then* search result "shoes" should be seen</br>
-   
-   ![kat2](https://user-images.githubusercontent.com/88919177/145562487-b46ef889-f069-4132-bc77-d75d2fdd786e.gif)
-   
-
-  ## Kata_3
-   **Scenario: sign in page verification**</br>
-     - *Given* homepage is open</br>
-     - *And* I close the pop up</br>
+  ## @task2
+   **Scenario: verify successful login**</br>
      - *When* I open the "Account" dropdown menu</br>
-     - *And* I choose "Account" submenu</br>
-     - *Then* sign in page should open</br>
+     - *And* I choose Sign In</br>
+     - *And* I fill the login page</br>
+     - *Then* should be logged in</br>
    
-   ![kat3](https://user-images.githubusercontent.com/88919177/145562516-37ad7035-5072-4b48-95d7-3f7fba0ee6e2.gif)
+  ![task2](https://user-images.githubusercontent.com/88919177/146367825-c753f861-4f97-4323-b150-fb7800a00c16.gif)
 
-   
-   ## Kata_4
-   **Scenario: credit card application page test**</br>
-     - *Given* homepage is open</br>
-     - *And* I close the pop up</br>
-     - *When* I open my best buy credit card page</br>
-     - *And* I open application page</br>
-     - *Then* application page should be open</br>
-   
-   
-   ![kat4](https://user-images.githubusercontent.com/88919177/145562549-c5523f18-2ce4-474e-96ee-a6cd83fdea96.gif)
+
+  ## @task3
+   **Scenario: verify saved item**</br>
+     - *And* I choose menu</br>
+     - *And* I open wireless headphones</br>
+     - *And* I filter philips brand</br>
+     - *And* I open second product</br>
+     - *And* I save the product</br>
+     - *And* I open saved items</br>
+     - *Then* title of the saved product should be on the list</br> 
+     
+![task3](https://user-images.githubusercontent.com/88919177/146368189-e4fd0152-8e6c-4fba-9acd-a0c4d7d1bbb8.gif)
+
 
 
