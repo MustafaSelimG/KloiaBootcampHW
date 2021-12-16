@@ -1,9 +1,9 @@
 # KloiaBootcampBDD
 >*includes* Selenium , Cucumber , JUnit , BDD , POM , Test Automation
 
-  **Background**
-     - *Given* homepage is open
-     - *And* I close the pop up
+  **Background**</br>
+     - *Given* homepage is open</br>
+     - *And* I close the pop up</br>
 
   ## @task1
    **Scenario: verify search results**</br>
