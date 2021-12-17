@@ -1,18 +1,59 @@
-# API Automation
+# Homework2
 >*includes* Selenium , Cucumber , Gherkin , Karate , API , Test Automation
-  ## Kata_1
-   **Scenario: print task**</br>
-      * print 'Hello World!'</br>
-      * karate.log("my first log!")</br>
- </br>
-  **Scenario: variables printing**</br>
-      * def myFirstVar = 'Hello World!'</br>
-      * def mySecondVar = 20</br>
-      * print myFirstVar,mySecondVar</br>
- </br>
-  **Scenario: config print task**</br>
-      * print appId</br>
 
+  **Background:**</br>
+   * def baseURI = 'https://petstore.swagger.io/v2'</br>
+   * def helper = Java.type('helpers.Helper')</br>
+</br>
+  ## Task1
+   **Scenario Outline: verify given status**</br>
+      *Given* url 'https://petstore.swagger.io/v2/pet/findByStatus?status=<status>'</br>
+      *When* method GET</br>
+      *Then* status 200</br>
+      *And* match responseHeaders['Content-Type'][0] == 'application/json'</br>
+      *And* match $..id each contains '#present'</br>
+      *And* match $..id each contains '#notnull'</br>
+      *And* match $..status contains '<status>'</br>
+      *And* print response</br>
+      </br>
+    Examples:</br>
+    |status   |</br>
+    |available|</br>
+    |pending  |</br>
+    
+![task1](https://user-images.githubusercontent.com/88919177/146497713-38d7348b-8698-4256-ad2e-2282c7588cef.gif)
+
+ </br>
+ ## Task2
+  **Scenario: generate emails**</br>
+      * print 'email:' , helper.emailGenerator()</br>
+![task2](https://user-images.githubusercontent.com/88919177/146497793-7f376da9-b28b-4c7a-bc98-dc47dcd03134.gif)
+ </br>
+  ## Task3
+  **Scenario: set and post user json file**</br>
+      *And* def user = read('classpath:data/user.json')</br>
+      *Given* url baseURI</br>
+      *And* header Content-Type = 'application/json'</br>
+      *And* path 'user'</br>
+      *And* def id = helper.idGenerator()</br>
+      *And* set user.id = id</br>
+      *And* set user.username = helper.usernameGenerator()</br>
+      *And* set user.firstname = helper.firstnameGenerator()</br>
+      *And* set user.lastname = helper.lastnameGenerator()</br>
+      *And* set user.email = helper.emailGenerator()</br>
+      *And* set user.password = helper.passwordGenerator()</br>
+      *And* set user.phone = helper.phoneGenerator()</br>
+      *And* set user.userStatus = helper.statusGenerator()</br>
+      *And* request user</br>
+      *And* method POST</br>
+      *And* status 200</br>
+      *And* match user.id == id</br>
+      * print user</br>
+      * print response</br>
+      
+      ![task3](https://user-images.githubusercontent.com/88919177/146498079-aef6bb1e-fc14-4a7d-b9e4-1465c87fab62.gif)
+
+ </br>
   **Scenario: printing JSON file**</br>
       * def myJson =</br>
        """</br>
