@@ -81,3 +81,12 @@
       </br>
  ![4](https://user-images.githubusercontent.com/88919177/146499245-70648459-5725-45db-b94e-b01c443edefd.gif)
       </br>
+      </br>
+     **Notes:** </br>
+      ● BaseURI: https://petstore.swagger.io/v2</br>
+      ● Swagger Documentation: https://petstore.swagger.io</br>
+      ● The project should be shared in a git repository</br>
+      ● Karate Framework should be used for this case study</br>
+      ● Each execution should generate a HTML report</br>
+      ● README.md file should be added</br>
+      ● Project can be run on the Command line</br>
