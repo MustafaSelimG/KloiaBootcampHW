@@ -46,8 +46,9 @@ Feature: case study 2
     * print user
     * print response
 
+
   @task4
-  Scenario: test4
+  Scenario: modify and post user json file
     And def user = read('classpath:data/user.json')
     Given url baseURI
     And header Content-Type = 'application/json'
@@ -65,4 +66,11 @@ Feature: case study 2
     Then status 200
     * print user
     * print response
+
+
+
+
+
+
+
 
