@@ -5,7 +5,7 @@
      - *Given* homepage is open</br>
      - *And* I close the pop up</br>
 
-  ## @task1
+  ## Task1
    **Scenario: verify search results**</br>
      - *And* I verify the page title</br>
      - *When* I search for "drone"</br>
@@ -14,7 +14,7 @@
 ![task1](https://user-images.githubusercontent.com/88919177/146367624-04c34204-a6f6-482b-8768-b4bb84c63f0c.gif)
 
 
-  ## @task2
+  ## Task2
    **Scenario: verify successful login**</br>
      - *When* I open the "Account" dropdown menu</br>
      - *And* I choose Sign In</br>
@@ -24,7 +24,7 @@
   ![task2](https://user-images.githubusercontent.com/88919177/146367825-c753f861-4f97-4323-b150-fb7800a00c16.gif)
 
 
-  ## @task3
+  ## Task3
    **Scenario: verify saved item**</br>
      - *And* I choose menu</br>
      - *And* I open wireless headphones</br>
