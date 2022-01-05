@@ -1,5 +1,5 @@
-# KloiaBootcampHW1
->*includes* Selenium , Cucumber , JUnit , BDD , POM , Test Automation
+# Homework1 - Web Testing
+>*libraries* Selenium , Cucumber , JUnit
 
   **Background**</br>
      - *Given* homepage is open</br>
