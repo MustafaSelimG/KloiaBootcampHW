@@ -1,5 +1,5 @@
-# Homework2
->*includes* Selenium , Cucumber , Gherkin , Karate , API , Test Automation
+# Homework2 - API Testing
+>*libraries* Selenium , Cucumber , Karate
 
   **Background:**</br>
    * def baseURI = 'https://petstore.swagger.io/v2'</br>
